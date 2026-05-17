@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/outer-frame-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  user-select: none;
+  -webkit-app-region: drag;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 13.375rem;
+    
+}
+
+button,
+input,
+textarea,
+select {
+  -webkit-app-region: no-drag;
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  margin-top: 0.625rem ;
+  width: 170px; /* 157 */
+  padding: 0.25rem 0.625rem;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 6.25rem;
+  border: 1px solid rgb(192, 121, 255);
+  background: rgba(210, 164, 255, 0.40);
+
+  font-family: "Pixelify Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+}
+
+#calendar {
+    display: flex;
+    width: 11.25rem;
+    height: 10.0625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-image: url("assets/inner-frame-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#day {
+    color: #FFF;  
+    text-align: center;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #858CD9;
+    font-family: Pixelify Sans;
+    font-size: 6.5rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 1.25rem; /* 16.667% */
+    letter-spacing: 0.45rem;
+}
+
+#month {
+    color: #FFF; 
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #858CD9;
+    font-family: Pixelify Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 1.25rem; /* 16.667% */
+    letter-spacing: 0.3rem;
+
+}
